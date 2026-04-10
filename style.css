@@ -1,13 +1,41 @@
-html {
-    box-sizing: border-box;
+.calculator-screen {
+  background: black;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  padding: 20px;
 }
-*, *:before, *:after {
-    box-sizing: inherit;
+
+.calculator-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
-body {
-  padding: 0;
-  margin: 0;
+
+.btn {
+  font-size: 1.5rem;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background: #e0e0e0;
+  cursor: pointer;
 }
-.wrapper {
-    width: 400px;
+
+.btn:hover {
+  background: #d5d5d5;
+}
+
+.btn:active {
+  background: #bbb;
+}
+
+.gray {
+  background: #c0c0c0;
+}
+
+.orange {
+  background: #d89243;
+  color: white;
+}
+
+.zero {
+  grid-column: span 3;
 }
