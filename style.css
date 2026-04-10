@@ -15,7 +15,6 @@ body {
   font-family: Arial, sans-serif;
 }
 
-
 .wrapper {
   width: 400px;
   background: black;
@@ -28,10 +27,6 @@ body {
   font-size: 3rem;
   text-align: right;
   padding: 20px;
-  height: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 }
 
 
@@ -44,7 +39,7 @@ body {
 .btn {
   height: 80px;
   font-size: 1.6rem;
-  border: 1px solid #8f8f8f;
+  border: 1px solid #999;
   background: #d6d6d6;
   cursor: pointer;
 }
@@ -60,13 +55,17 @@ body {
 }
 
 
-.zero {
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
   grid-column: span 3;
 }
 
 
 .btn:hover {
-  filter: brightness(96%);
+  filter: brightness(95%);
 }
 
 .btn:active {
