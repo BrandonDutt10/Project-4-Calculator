@@ -9,19 +9,18 @@ html {
 body {
   margin: 0;
   height: 100vh;
-  background: #2a1e1a;
+  background: #2a1e1a; 
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
 }
 
-
 .wrapper {
   width: 400px;
   background: black;
+  border: 2px solid black;
 }
-
 
 .calculator-screen {
   background: black;
@@ -29,18 +28,17 @@ body {
   font-size: 3rem;
   padding: 20px;
   height: 100px;
-
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  overflow: hidden; 
 }
-
 
 .calculator-buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr); 
+  width: 100%;
 }
-
 
 .btn {
   height: 80px;
@@ -48,8 +46,11 @@ body {
   border: 1px solid black;
   background: #d6d6d6;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
 }
-
 
 .gray {
   background: #c4c4c4;
@@ -61,10 +62,14 @@ body {
 }
 
 
+.span-2 {
+  grid-column: span 2;
+}
+
+
 .span-3 {
   grid-column: span 3;
 }
-
 
 .btn:hover {
   filter: brightness(95%);
