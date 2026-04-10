@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -15,6 +16,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
 .wrapper {
   width: 400px;
   background: black;
@@ -25,8 +27,12 @@ body {
   background: black;
   color: white;
   font-size: 3rem;
-  text-align: right;
   padding: 20px;
+  height: 100px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 
@@ -39,7 +45,7 @@ body {
 .btn {
   height: 80px;
   font-size: 1.6rem;
-  border: 1px solid #999;
+  border: 1px solid black;
   background: #d6d6d6;
   cursor: pointer;
 }
@@ -54,10 +60,6 @@ body {
   color: white;
 }
 
-
-.span-2 {
-  grid-column: span 2;
-}
 
 .span-3 {
   grid-column: span 3;
