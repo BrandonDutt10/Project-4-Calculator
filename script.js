@@ -26,6 +26,8 @@ function handleOperator(op) {
 function calculate() {
   const current = parseFloat(currentValue);
 
+  if (previousValue === null || operator === null) return;
+
   if (operator === "add") {
     currentValue = previousValue + current;
   } else if (operator === "subtract") {
@@ -33,7 +35,7 @@ function calculate() {
   } else if (operator === "multiply") {
     currentValue = previousValue * current;
   } else if (operator === "divide") {
-    currentValue = previousValue / current;
+    currentValue = current === 0 ? "Error" : previousValue / current;
   }
 
   operator = null;
